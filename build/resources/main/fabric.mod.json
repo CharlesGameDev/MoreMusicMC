@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "moremusic",
+	"version": "1.0.0",
+	"name": "MoreMusic",
+	"description": "Adds new music for different gameplay scenarios",
+	"authors": [
+		"Charles Game Dev"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/CharlesGameDev/MoreMusicMC"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/moremusic/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.charlesgamedev.moremusic.MoreMusicMod"
+		],
+		"client": [
+			"com.charlesgamedev.moremusic.ModClient"
+		],
+		"fabric-datagen": [
+			"com.charlesgamedev.moremusic.MoreMusicModDataGenerator"
+		]
+	},
+	"mixins": [
+		"moremusic.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
